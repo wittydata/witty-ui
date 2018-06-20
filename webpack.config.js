@@ -1,4 +1,4 @@
-var path = require('path');
+var path = require('path')
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -20,12 +20,18 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: [ 'css-loader' ]
+        test: /\.less$/,
+        use: [{
+          loader: 'style-loader' // creates style nodes from JS strings
+        }, {
+          loader: 'css-loader' // translates CSS into CommonJS
+        }, {
+          loader: 'less-loader' // compiles Less to CSS
+        }]
       }
     ]
   },
   externals: {
     'react': 'commonjs react'
   }
-};
+}
