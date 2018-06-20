@@ -5,14 +5,14 @@
 [npm-image]: http://img.shields.io/npm/v/witty-ui.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/witty-ui
 
----
-
 Witty Data UI components for modern apps
 
-## Features
+## UI Components
 
-- {Switch} 
-- {FormRow} 
+- Switch 
+- FormRow 
+
+---
 
 ## Install
 
@@ -27,10 +27,10 @@ npm install witty-ui --save
 ## Usage
 
 ```jsx
-import { Switch } = require('witty-ui');
+import { Switch } from 'witty-ui'
 
 render () {
-    return (<Switch onLabel='Yes' offLabel='No' />)
+  return (<Switch onLabel='Yes' offLabel='No' />)
 }
 
 ```
