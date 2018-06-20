@@ -5,14 +5,12 @@
 [npm-image]: http://img.shields.io/npm/v/witty-ui.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/witty-ui
 
-Witty Data UI components for modern apps
+UI components for modern apps
 
 ## UI Components
 
 - Switch 
 - FormRow 
-
----
 
 ## Install
 
@@ -26,11 +24,33 @@ npm install witty-ui --save
 
 ## Usage
 
+### Switch
+
+<img width="400" src="https://wittydata.github.io/switch.png">
+
 ```jsx
+// Switch
+
 import { Switch } from 'witty-ui'
 
 render () {
   return (<Switch onLabel='Yes' offLabel='No' />)
+}
+
+```
+
+### FormRow
+
+```jsx
+// FormRow
+
+import { FormRow, Switch } from 'witty-ui'
+
+render () {
+  return (
+    <FormRow label='Pick Up at Store' col={{label: 6, field: 16}}>
+      <Switch onLabel='Yes' offLabel='No' />
+    </FormRow>)
 }
 
 ```
