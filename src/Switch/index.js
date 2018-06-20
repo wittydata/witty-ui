@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Switch as rcSwitch } from 'rc-switch'
+import RcSwitch from 'rc-switch'
 
+import 'rc-switch/assets/index.css'
 import './styles.css'
 
 export default class Switch extends Component {
@@ -8,7 +9,7 @@ export default class Switch extends Component {
     const { disabled = false, onChange, onLabel = 'On', offLabel = 'Off' } = this.props
 
     return (
-      <rcSwitch
+      <RcSwitch
         onChange={onChange}
         disabled={disabled}
         checkedChildren={onLabel}

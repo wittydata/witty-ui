@@ -1,2 +1,1 @@
-# witty-ui
-React UI components
+Create npm packages for ReactJS

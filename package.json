@@ -1,22 +1,41 @@
 {
   "name": "witty-ui",
-  "version": "1.0.0",
-  "description": "Witty Data React UI Components",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "React UI components for modern apps",
+  "main": "build/index.js",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "rc-switch": "^1.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "webpack": "^2.6.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wittydata/witty-ui.git"
   },
-  "author": "witty data",
-  "license": "MIT",
+  "keywords": [
+    "react",
+    "ui"
+  ],
+  "author": "Witty Data",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/wittydata/witty-ui/issues"
   },
-  "homepage": "https://github.com/wittydata/witty-ui#readme",
-  "dependencies": {
-    "rc-switch": "^1.6.0"
-  }
+  "homepage": "https://github.com/wittydata/witty-ui#readme"
 }
