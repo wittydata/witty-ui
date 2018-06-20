@@ -1,0 +1,22 @@
+{
+  "name": "witty-ui",
+  "version": "1.0.0",
+  "description": "Witty Data React UI Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wittydata/witty-ui.git"
+  },
+  "author": "witty data",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wittydata/witty-ui/issues"
+  },
+  "homepage": "https://github.com/wittydata/witty-ui#readme",
+  "dependencies": {
+    "rc-switch": "^1.6.0"
+  }
+}
